@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorBackground">#1B2427</color>
+    <color name="colorBackgroundDarker">#151C1F</color>
+    <color name="colorTextAction">#f2f2f2</color>
+    <color name="colorButton">#FFFFFF</color>
+    <color name="colorSeparator">#182022</color>
+    <color name="colorBackground_main">#182022</color>
+    <color name="serach_bg">#202125</color>
+
+
+</resources>

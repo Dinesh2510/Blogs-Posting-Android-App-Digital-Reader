@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:bottomLeftRadius="30dp" android:bottomRightRadius="30dp" android:radius="60dp" android:topLeftRadius="30dp" android:topRightRadius="30dp" />
+            <solid android:color="@color/colorBackground" />
+            <padding android:bottom="0dp" android:left="15dp" android:right="15dp" android:top="0dp" />
+            <size android:width="70dp" android:height="25dp" />
+        </shape>
+    </item>
+
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <corners android:bottomLeftRadius="30dp" android:bottomRightRadius="30dp" android:radius="60dp" android:topLeftRadius="30dp" android:topRightRadius="30dp" />
+            <solid android:color="@color/colorBackground" />
+            <padding android:bottom="0dp" android:left="15dp" android:right="15dp" android:top="0dp" />
+            <size android:width="70dp" android:height="25dp" />
+        </shape>
+    </item>
+
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:bottomLeftRadius="30dp" android:bottomRightRadius="30dp" android:radius="60dp" android:topLeftRadius="30dp" android:topRightRadius="30dp" />
+            <solid android:color="@color/colorBackgroundDarker" />
+            <padding android:bottom="0dp" android:left="15dp" android:right="15dp" android:top="0dp" />
+            <size android:width="70dp" android:height="25dp" />
+        </shape>
+    </item>
+</selector>

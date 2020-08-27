@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nested_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+    android:scrollingCache="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackgroundDarker"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBackground"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_mxlarge">
+
+            <RelativeLayout
+                android:id="@+id/rel_avatar"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:background="@drawable/shape_circle"
+                android:clickable="true"
+                android:padding="@dimen/spacing_medium">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:background="@drawable/round_name_bg"
+                android:gravity="center"
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorTextAction"
+                app:fontFamily="sans-serif-medium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/spacing_middle"
+            android:paddingBottom="@dimen/spacing_middle">
+
+            <LinearLayout
+                android:id="@+id/nav_menu_home"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_xmlarge"
+                android:background="@drawable/selectable_bg_dark"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:onClick="onDrawerMenuClick"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/spacing_xlarge"
+                android:paddingRight="@dimen/spacing_xlarge">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_menu_home"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/grey_40"
+                    app:fontFamily="sans-serif" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/nav_menu_topic"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_xmlarge"
+                android:background="@drawable/selectable_bg_dark"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:onClick="onDrawerMenuClick"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/spacing_xlarge"
+                android:paddingRight="@dimen/spacing_xlarge">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_menu_topic"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/grey_40"
+                    app:fontFamily="sans-serif" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/nav_menu_saved"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_xmlarge"
+                android:background="@drawable/selectable_bg_dark"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:onClick="onDrawerMenuClick"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/spacing_xlarge"
+                android:paddingRight="@dimen/spacing_xlarge">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_menu_saved"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/grey_40"
+                    app:fontFamily="sans-serif" />
+
+            </LinearLayout>
+            <!--
+                        <LinearLayout
+                            android:id="@+id/nav_menu_idea"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/spacing_xmlarge"
+                            android:background="@drawable/selectable_bg_dark"
+                            android:clickable="true"
+                            android:gravity="center_vertical"
+                            android:onClick="onDrawerMenuClick"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/spacing_xlarge"
+                            android:paddingRight="@dimen/spacing_xlarge">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Top_Ideas"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                android:textColor="@color/grey_40"
+                                app:fontFamily="sans-serif" />
+
+                        </LinearLayout>
+            -->
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/spacing_xlarge"
+            android:layout_marginLeft="@dimen/spacing_xlarge"
+            android:background="@color/colorSeparator" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/spacing_middle"
+            android:paddingBottom="@dimen/spacing_middle">
+
+            <LinearLayout
+                android:id="@+id/nav_menu_more_app"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_xmlarge"
+                android:background="@drawable/selectable_bg_dark"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:onClick="onDrawerMenuClick"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/spacing_xlarge"
+                android:paddingRight="@dimen/spacing_xlarge">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_menu_more"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/grey_40"
+                    app:fontFamily="sans-serif" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/nav_menu_rate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_xmlarge"
+                android:background="@drawable/selectable_bg_dark"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:onClick="onDrawerMenuClick"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/spacing_xlarge"
+                android:paddingRight="@dimen/spacing_xlarge">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_menu_rate"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/grey_40"
+                    app:fontFamily="sans-serif" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/nav_menu_about"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_xmlarge"
+                android:background="@drawable/selectable_bg_dark"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:onClick="onDrawerMenuClick"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/spacing_xlarge"
+                android:paddingRight="@dimen/spacing_xlarge">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_menu_about"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/grey_40"
+                    app:fontFamily="sans-serif" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBackground"
+            android:paddingLeft="32dp"
+            android:paddingTop="@dimen/spacing_middle"
+            android:paddingRight="32dp"
+            android:paddingBottom="@dimen/spacing_xlarge">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/ic_launcher" />
+
+                <View
+                    android:layout_width="@dimen/spacing_middle"
+                    android:layout_height="0dp" />
+
+                <TextView
+                    android:id="@+id/settings"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/spacing_mxlarge"
+                    android:paddingStart="@dimen/spacing_large"
+                    android:paddingLeft="@dimen/spacing_large"
+                    android:text="@string/settings"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/grey_40" />
+
+                <TextView
+                    android:id="@+id/login_logout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/spacing_mxlarge"
+                    android:paddingStart="@dimen/spacing_xmiddle"
+                    android:paddingLeft="@dimen/spacing_xmiddle"
+                    android:text="@string/logout_title"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/grey_40" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

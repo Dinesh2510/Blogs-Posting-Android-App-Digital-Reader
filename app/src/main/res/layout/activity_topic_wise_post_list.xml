@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground"
+        android:orientation="vertical"
+
+        tools:context=".Activities.BookMarkList">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"
+            app:elevation="0dp">
+
+            <include layout="@layout/toolbar" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView_all_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBackground"
+            android:scrollingCache="true"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/progress_loading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:paddingBottom="70dp"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_large">
+
+            <LinearLayout
+                android:id="@+id/lyt_failed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:paddingBottom="?attr/actionBarSize"
+                android:visibility="gone">
+
+                <include layout="@layout/nointernet_lyt" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyt_nopost"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:paddingBottom="?attr/actionBarSize"
+                android:visibility="gone">
+
+                <include layout="@layout/no_post_lyt" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout><!----><!--<?xml version="1.0" encoding="utf-8"?>&ndash;&gt;
+    &lt;!&ndash;<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"&ndash;&gt;
+    &lt;!&ndash;    xmlns:app="http://schemas.android.com/apk/res-auto"&ndash;&gt;
+    &lt;!&ndash;    xmlns:tools="http://schemas.android.com/tools"&ndash;&gt;
+    &lt;!&ndash;    android:id="@+id/swipe"&ndash;&gt;
+    &lt;!&ndash;    android:layout_width="match_parent"&ndash;&gt;
+    &lt;!&ndash;    android:layout_height="match_parent">&ndash;&gt;
+
+    &lt;!&ndash;    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"&ndash;&gt;
+    &lt;!&ndash;        xmlns:app="http://schemas.android.com/apk/res-auto"&ndash;&gt;
+    &lt;!&ndash;        xmlns:tools="http://schemas.android.com/tools"&ndash;&gt;
+    &lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;
+    &lt;!&ndash;        android:layout_height="match_parent"&ndash;&gt;
+    &lt;!&ndash;        android:orientation="vertical"&ndash;&gt;
+    &lt;!&ndash;        tools:context=".Activities.TopicWisePostList">&ndash;&gt;
+
+    &lt;!&ndash;        <com.google.android.material.appbar.AppBarLayout&ndash;&gt;
+    &lt;!&ndash;            android:id="@+id/appbar_layout"&ndash;&gt;
+    &lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;
+    &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;
+    &lt;!&ndash;            android:fitsSystemWindows="true"&ndash;&gt;
+    &lt;!&ndash;            android:theme="@style/ThemeOverlay.AppCompat.Light"&ndash;&gt;
+    &lt;!&ndash;            app:elevation="0dp">&ndash;&gt;
+
+    &lt;!&ndash;            <include layout="@layout/toolbar" />&ndash;&gt;
+
+    &lt;!&ndash;        </com.google.android.material.appbar.AppBarLayout>&ndash;&gt;
+
+    &lt;!&ndash;        <androidx.recyclerview.widget.RecyclerView&ndash;&gt;
+    &lt;!&ndash;            android:id="@+id/recyclerView_all_post"&ndash;&gt;
+    &lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;
+    &lt;!&ndash;            android:layout_height="match_parent"&ndash;&gt;
+    &lt;!&ndash;            android:background="@color/colorBackground"&ndash;&gt;
+    &lt;!&ndash;            android:scrollingCache="true" />&ndash;&gt;
+
+    &lt;!&ndash;        <ProgressBar&ndash;&gt;
+    &lt;!&ndash;            android:id="@+id/progress_loading"&ndash;&gt;
+    &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;
+    &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;
+    &lt;!&ndash;            android:layout_centerInParent="true"&ndash;&gt;
+    &lt;!&ndash;            android:layout_gravity="center"&ndash;&gt;
+    &lt;!&ndash;            android:foregroundGravity="center"&ndash;&gt;
+    &lt;!&ndash;            android:paddingBottom="70dp"&ndash;&gt;
+    &lt;!&ndash;            android:visibility="visible" />&ndash;&gt;
+
+
+    &lt;!&ndash;    </LinearLayout>&ndash;&gt;
+    &lt;!&ndash;</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
+
+
