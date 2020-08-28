@@ -19,15 +19,9 @@
 - Trending Section, New Categories also List Of Posts Added.
 - follow your favorite topic, 🔖 bookmark your favorite Posts.📗
 - Razor Pay Payment Gateways for Premium Subscription 💳
+- Referal Code system
 - some bugs are fixed. 🐛
 
-
-### To be Implemented 
-- Notification Section with Push notification
-- New feed based on Friend Requests
-- Referal Code system
-- Post Adding Form 
--Login using Google+, Facebook and Mobile Number
 
 ### Technology, library,APIs,Software
 - Material Design 
