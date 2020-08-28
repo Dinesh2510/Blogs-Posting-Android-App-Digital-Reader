@@ -4,7 +4,7 @@
  <a href='https://play.google.com/store/apps/details?id=com.digital.reader&hl=en_IN&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img width="350" height="150"alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
 </p>
 
-## The Digital Reader App it is an app for people who loves Reading Books, Blogs or Posts and the Peoples who like to Posts new Things.
+## The Digital Reader App is a platform for people who love reading books, blogs or posts and also for those who like to share new things with everyone.
 
 - PERSONALIZED : You read Different Posts Daily with category/Topic wise. 💻
 - FOLLOW : Follow the Topics that You like it.🚶
