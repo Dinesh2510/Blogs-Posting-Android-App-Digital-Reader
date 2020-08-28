@@ -1,6 +1,8 @@
 # Blog-Posting-Android-App(Digital-Reader) 🆕
-
- Download App :https://play.google.com/store/apps/details?id=com.digital.reader&hl=en_IN
+<p align="center">
+  <img width="1000" height="550" src="Untitled_design_.png">
+ <a href='https://play.google.com/store/apps/details?id=com.digital.reader&hl=en_IN&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img width="350" height="150"alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
+</p>
 
 ## The Digital Reader App it is an app for people who loves Reading Books, Blogs or Posts and the Peoples who like to Posts new Things.
 
