@@ -28,7 +28,7 @@
 - Volley library
 - Room Database (Offline Storage)
 - Razor Pay Payment Gateway
-- API's Developed Using PHP 
+- API's Developed Using PHP (PHP API/Webservices Added in Zip)
 
 
 📧 Have any query related to app please contact me.
